@@ -53,9 +53,6 @@ function App() {
           {isActive && (
             <div className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center justify-evenly gap-6">
               <a
-                onClick={() => {
-                  setIsActive(false);
-                }}
                 href="#home"
                 className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out"
                 onClick={() => {
