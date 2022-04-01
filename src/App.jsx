@@ -6,7 +6,7 @@ function App() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="flex w-screen h-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
+    <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
       {/* Navigation Bar*/}
       <nav className="w-full px-6 z-50 fixed inset-x-0 top-2 flex justify-center items-center">
         <div className="w-full md:w-880 bg-navBar p-4 rounded-2xl flex items-center">
@@ -103,17 +103,29 @@ function App() {
       </nav>
 
       <div className="relative" id="home">
-        <div>
-          <Spline scene="https://draft.spline.design/oCVA7B0VkZebUG0a/scene.spline" />
-          <div className="absolute bottom-10 w-full justify-center items-center flex">
-            <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl">
-              <p className="text-textBase">Press and drag to orbit</p>
-            </div>
+        <Spline scene="https://draft.spline.design/oCVA7B0VkZebUG0a/scene.spline" />
+        <div className="absolute bottom-10 w-full justify-center items-center flex">
+          <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl">
+            <p className="text-textBase">Press and drag to orbit</p>
           </div>
         </div>
       </div>
+
+      {/*Main Section*/}
+      <main className="w-[80%] mt-5">
+        <section
+          className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-24"
+          id="about"
+        >
+          <div className="w-full h-420 flex items-center justify-center">
+            <div className="w-275 h-340 bg-emerald-200 rounded-md"></div>
+            <div></div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
 
 export default App;
+{/*57*/}
