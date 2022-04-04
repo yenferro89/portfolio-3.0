@@ -188,7 +188,7 @@ function App() {
                 key={n.id}
                 className="  border border-zinc-800 rounded-md p-2 min-w-[27px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
               >
-                <p className="  text-md text-textBase font-medium uppercase">
+                <p className=" text-md text-textBase font-medium uppercase">
                   {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
                 </p>
                 <img
@@ -202,8 +202,8 @@ function App() {
                       {n.techs}
                     </span>
                   </p>
-                  <a href={n.github} className="">
-                    <div>
+                  <a href={n.github} alt="" className="">
+                    <div className="">
                       <IoLogoGithub className=" text-textBase text-3xl cursor-pointer"></IoLogoGithub>
                     </div>
                   </a>
@@ -211,10 +211,26 @@ function App() {
               </div>
             ))}
         </section>
+
+        <section
+          className="flex flex-col items-center justify-center w-full my-24"
+          id="contact"
+        >
+          <p className=" text-2xl text-gray-400 capitalize">Follow me</p>
+          <div className="flex items-center justify-center w-full my-4 flex-wrap gap-4">
+            <a
+              href="#"
+              className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3
+            "
+            >
+              <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />
+              <p className=" text-lg text-textBase">Github</p>
+            </a>
+          </div>
+        </section>
       </main>
     </div>
   );
 }
 
 export default App;
-

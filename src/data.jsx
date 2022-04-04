@@ -14,7 +14,7 @@ import {
       date: "2016 - present",
       iconsSrc: <IoCodeWorking />,
       title: "Creative Director",
-      location: "Doha, Qatar",
+      location: "Miami, FL",
       description:
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
     },
@@ -23,7 +23,7 @@ import {
       date: "2014 - 2016",
       iconsSrc: <IoCodeWorking />,
       title: "Creative Director",
-      location: "Doha, Qatar",
+      location: "Miami, FL",
       description:
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
     },
@@ -32,7 +32,7 @@ import {
       date: "2012 - 2014",
       iconsSrc: <IoCodeWorking />,
       title: "Creative Director",
-      location: "Doha, Qatar",
+      location: "Miami, FL",
       description:
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
     },
@@ -41,7 +41,7 @@ import {
       date: "2011 - 2012",
       iconsSrc: <IoCodeWorking />,
       title: "Creative Director",
-      location: "Doha, Qatar",
+      location: "Miami, FL",
       description:
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
     },
@@ -50,7 +50,7 @@ import {
       date: "2010 - 2011",
       iconsSrc: <IoCodeWorking />,
       title: "Creative Director",
-      location: "Doha, Qatar",
+      location: "Miami, FL",
       description:
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
     },
