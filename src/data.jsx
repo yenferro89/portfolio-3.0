@@ -59,10 +59,10 @@ export const Experience = [
 export const Projects = [
   {
     id: 1,
-    name: "Food Delivery UI Mockup",
+    name: "eCommerce Web App",
     imageSrc: img1,
-    techs: "React Js, Redux, Material UI",
-    github: "#",
+    techs: "Angular, Firebase, TypeScript",
+    github: "https://github.com/yenferro89/eCommerce_Angular",
   },
   {
     id: 2,
@@ -117,7 +117,7 @@ export const SocialLinks = [
   {
     id: 3,
     iconSrc: (
-      <IoLogoInstagram className="text-purple-300 text-3xl cursor-pointer" />
+      <IoLogoInstagram className="text-orange-300 text-3xl cursor-pointer" />
     ),
     name: "Instagram",
     link: "https://drive.google.com/file/d/1DaMTztN3SNWb61fAx52uJGcc5X1cpPiX/view?usp=sharing",

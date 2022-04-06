@@ -221,8 +221,10 @@ function App() {
                         {n.techs}
                       </span>
                     </p>
-                    <a href={n.github} alt="" className="">
-                      <motion.div whileTap={{ scale: 0.8 }} className="">
+                    <a href={n.github} target="_blank">
+                      <motion.div 
+                      whileTap={{ scale: 0.8 }} 
+                      className="">
                         <IoLogoGithub className=" text-textBase text-3xl cursor-pointer"></IoLogoGithub>
                       </motion.div>
                     </a>
