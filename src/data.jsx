@@ -2,7 +2,7 @@ import {
   IoCodeWorking,
   IoLogoGithub,
   IoLogoYoutube,
-  IoLogoTwitter,
+  IoLogoInstagram,
   IoLogoLinkedin,
   IoLogoWhatsapp,
 } from "react-icons/io5";
@@ -106,21 +106,21 @@ export const SocialLinks = [
     id: 1,
     iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
     name: "GitHub",
-    link: "#",
+    link: "https://github.com/yenferro89",
   },
   {
     id: 2,
     iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
     name: "YouTube",
-    link: "#",
+    link: "https://www.youtube.com/channel/UCKToESzJI7tM05eoBBZ-44g",
   },
   {
     id: 3,
     iconSrc: (
-      <IoLogoTwitter className="text-blue-500 text-3xl cursor-pointer" />
+      <IoLogoInstagram className="text-purple-300 text-3xl cursor-pointer" />
     ),
-    name: "Twitter",
-    link: "#",
+    name: "Instagram",
+    link: "https://drive.google.com/file/d/1DaMTztN3SNWb61fAx52uJGcc5X1cpPiX/view?usp=sharing",
   },
   {
     id: 4,
@@ -128,7 +128,7 @@ export const SocialLinks = [
       <IoLogoLinkedin className="text-blue-800 text-3xl cursor-pointer" />
     ),
     name: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/yen-pinero-ferro-523a361b2",
   },
   {
     id: 5,
@@ -136,6 +136,6 @@ export const SocialLinks = [
       <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
     ),
     name: "Whatsapp",
-    link: "#",
+    link: "https://drive.google.com/file/d/1w_qu-wn6nFCJaxdcF-fpr9Yi76_YgBkC/view?usp=sharing",
   },
 ];

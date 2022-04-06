@@ -55,8 +55,8 @@ function App() {
                 Download
               </a>
             </div>
-            <motion.div 
-              whileTap={{scale:0.5}}
+            <motion.div
+              whileTap={{ scale: 0.5 }}
               className="block md:hidden ml-auto cursor-pointer"
               onClick={() => setIsActive(!isActive)}
             >
@@ -65,11 +65,12 @@ function App() {
 
             {isActive && (
               <motion.div
-              initial={{opacity:0, scale: 0.5}}
-              animate={{opacity:1, scale: 1.1}}
-              exit={{opacity:0, scale:0.5}}
-              transition={{delay: "0.1s", type: "spring"}}
-              className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center justify-evenly gap-6">
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1.1 }}
+                exit={{ opacity: 0, scale: 0.5 }}
+                transition={{ delay: "0.1s", type: "spring" }}
+                className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center justify-evenly gap-6"
+              >
                 <a
                   href="#home"
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out"
@@ -147,17 +148,19 @@ function App() {
 
             <div className="w-full h-420 flex flex-col items-center justify-center">
               <p className="  text-lg text-textBase text-center">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Ratione qui, quasi dicta facilis necessitatibus doloribus! Aut,
-                libero voluptate! Excepturi itaque provident officiis
-                repellendus voluptate labore obcaecati praesentium aperiam
-                delectus sed.
+                A Computer Engineer focusing on Fullstack Development, Artificial Intelligence, Big
+                Data, Data System Software, and Embedded Systems, looking to secure a position with a
+                well-established company that will lead me to a lasting
+                relationship in the tech field.
               </p>
-              <button className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80">
+              <motion.button
+                whileTap={{ scale: 0.8 }}
+                className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
+              >
                 <span className="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                   Download
                 </span>
-              </button>
+              </motion.button>
             </div>
           </section>
 
@@ -218,9 +221,9 @@ function App() {
                       </span>
                     </p>
                     <a href={n.github} alt="" className="">
-                      <div className="">
+                      <motion.div whileTap={{ scale: 0.8 }} className="">
                         <IoLogoGithub className=" text-textBase text-3xl cursor-pointer"></IoLogoGithub>
-                      </div>
+                      </motion.div>
                     </a>
                   </div>
                 </div>
@@ -235,14 +238,16 @@ function App() {
             <div className="flex items-center justify-center w-full my-4 flex-wrap gap-4">
               {SocialLinks &&
                 SocialLinks.map((n) => (
-                  <a
-                    href="#"
+                  <motion.a
+                    whileTap={{ scale: 0.8 }}
+                    href={n.link} 
+                    target="_blank"
                     className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3
             "
                   >
                     {n.iconSrc}
                     <p className=" text-lg text-textBase">{n.name}</p>
-                  </a>
+                  </motion.a>
                 ))}
             </div>
           </section>
