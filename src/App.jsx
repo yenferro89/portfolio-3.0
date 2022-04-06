@@ -122,7 +122,7 @@ function App() {
         </nav>
 
         <div className="relative" id="home">
-          <Spline scene="https://draft.spline.design/oCVA7B0VkZebUG0a/scene.spline" />
+          <Spline scene="https://draft.spline.design/X-msjt6ec8RlCzvE/scene.spline" />{" "}
           <div className="absolute bottom-10 w-full justify-center items-center flex">
             <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl">
               <p className="text-textBase">Press and drag to orbit</p>
@@ -148,8 +148,9 @@ function App() {
 
             <div className="w-full h-420 flex flex-col items-center justify-center">
               <p className="  text-lg text-textBase text-center">
-                A Computer Engineer focusing on Fullstack Development, Artificial Intelligence, Big
-                Data, Data System Software, and Embedded Systems, looking to secure a position with a
+                A Computer Engineer focusing on Fullstack Development,
+                Artificial Intelligence, Big Data, Data System Software, and
+                Embedded Systems, looking to secure a position with a
                 well-established company that will lead me to a lasting
                 relationship in the tech field.
               </p>
@@ -240,7 +241,7 @@ function App() {
                 SocialLinks.map((n) => (
                   <motion.a
                     whileTap={{ scale: 0.8 }}
-                    href={n.link} 
+                    href={n.link}
                     target="_blank"
                     className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3
             "
