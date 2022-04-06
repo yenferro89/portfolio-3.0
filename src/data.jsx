@@ -66,10 +66,10 @@ export const Projects = [
   },
   {
     id: 2,
-    name: "Full Stack Social Media App ",
+    name: "ExpressJS API",
     imageSrc: img1,
-    techs: "React Js, Sanity, Tailwind CSS",
-    github: "#",
+    techs: "NodeJS, ExpressJS",
+    github: "https://github.com/yenferro89/ExpressJS-API",
   },
   {
     id: 3,
