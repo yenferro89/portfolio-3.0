@@ -92,13 +92,6 @@ export const Projects = [
     techs: "React Js, Chara UI, Firebase",
     github: "#",
   },
-  {
-    id: 6,
-    name: "Whatsapp UI Clone",
-    imageSrc: img1,
-    techs: "NextJs, Firebase Auth",
-    github: "#",
-  },
 ];
 
 export const SocialLinks = [
