@@ -146,7 +146,7 @@ function App() {
             id="about"
           >
             <div className="w-full h-420 flex items-center justify-center">
-              <div className="w-275 h-340 bg-emerald-400 rounded-md relative">
+              <div className="w-275 h-340 bg-emerald-300 rounded-md relative">
                 <img
                   className="w-full h-full absolute -right-4 top-4 object-cover rounded-lg shadow-lg"
                   src={Yen}

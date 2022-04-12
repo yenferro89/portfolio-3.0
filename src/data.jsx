@@ -50,7 +50,7 @@ export const Experience = [
     id: 5,
     date: "2012 - 2014",
     iconsSrc: <IoCodeWorking />,
-    title: "Assistan Manager",
+    title: "Assistant Manager",
     location: "Miami, FL",
     description:
       "Project Management, Team Leading",
