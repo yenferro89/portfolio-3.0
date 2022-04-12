@@ -11,21 +11,21 @@ import img1 from "./images/IMG_1339.jpg";
 export const Experience = [
   {
     id: 1,
-    date: "2016 - present",
+    date: "2021 - present",
     iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
+    title: "Fullstack Developer",
     location: "Miami, FL",
     description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      "Web Development, User Experience, Visual Design, Project Management, Team Leading",
   },
   {
     id: 2,
-    date: "2014 - 2016",
+    date: "2022 - present",
     iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
+    title: "IT Support Analyst",
     location: "Miami, FL",
     description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      "Moderate Website, Documentation, Data Warehouse Management, Project Management",
   },
   {
     id: 3,
@@ -87,10 +87,10 @@ export const Projects = [
   },
   {
     id: 5,
-    name: "Own Video Blog",
+    name: "Mortgage Calculator",
     imageSrc: img1,
-    techs: "React Js, Chara UI, Firebase",
-    github: "#",
+    techs: "Java",
+    github: "https://github.com/yenferro89/Mortgage_Calculator_Improved",
   },
 ];
 

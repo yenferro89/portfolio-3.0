@@ -140,7 +140,7 @@ function App() {
             id="about"
           >
             <div className="w-full h-420 flex items-center justify-center">
-              <div className="w-275 h-340 bg-emerald-200 rounded-md relative">
+              <div className="w-275 h-340 bg-emerald-400 rounded-md relative">
                 <img
                   className="w-full h-full absolute -right-4 top-4 object-cover rounded-lg shadow-lg"
                   src={Yen}
@@ -178,13 +178,13 @@ function App() {
                     className="vertical-timeline-element--work"
                     contentStyle={{
                       background: "rgb(21,24,31)",
-                      color: "#888",
+                      color: "rgb(110 231 183",
                     }}
                     contentArrowStyle={{
-                      borderRight: "7px solid  rgb(21,24,31)",
+                      borderRight: "7px solid  rgb(52,211,153)",
                     }}
-                    date="2011 - present"
-                    iconStyle={{ background: "rgb(21,24,31)", color: "#888" }}
+                    date={n.date}
+                    iconStyle={{ background: "rgb(21,24,31)", color: "rgb(52,211,153)" }}
                     icon={n.iconsSrc}
                   >
                     <h3 className="vertical-timeline-element-title">
