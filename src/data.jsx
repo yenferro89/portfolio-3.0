@@ -11,48 +11,49 @@ import img1 from "./images/IMG_1339.jpg";
 export const Experience = [
   {
     id: 1,
-    date: "2021 - present",
-    iconsSrc: <IoCodeWorking />,
-    title: "Fullstack Developer",
-    location: "Miami, FL",
-    description:
-      "Web Development, User Experience, Visual Design, Project Management, Team Leading",
-  },
-  {
-    id: 2,
-    date: "2022 - present",
+    date: "2022 - Present",
     iconsSrc: <IoCodeWorking />,
     title: "IT Support Analyst",
     location: "Miami, FL",
     description:
-      "Moderate Website, Documentation, Data Warehouse Management, Project Management",
+      "Moderate Website, Documentation, Data Warehouse Management, and Project Management",
   },
   {
-    id: 3,
-    date: "2012 - 2014",
+    id: 2,
+    date: "2021 - 2022",
     iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
+    title: "Fullstack Developer",
     location: "Miami, FL",
     description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      "Web Development, User Experience, Visual Design, Project Management, and Team Leading",
+  },
+
+  {
+    id: 3,
+    date: "2019 - 2020",
+    iconsSrc: <IoCodeWorking />,
+    title: "Technician",
+    location: "Miami, FL",
+    description:
+      "Perform routine checks, Repairs, Overhauls, and Project Management",
   },
   {
     id: 4,
-    date: "2011 - 2012",
+    date: "2014 - 2019",
     iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
+    title: "Inspector",
     location: "Miami, FL",
     description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      "Incoming and Final Inspections, Assembly-Disassembly of units, and Project Managment",
   },
   {
     id: 5,
-    date: "2010 - 2011",
+    date: "2012 - 2014",
     iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
+    title: "Assistan Manager",
     location: "Miami, FL",
     description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      "Project Management, Team Leading",
   },
 ];
 

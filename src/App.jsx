@@ -2,6 +2,7 @@ import { IoMenu, IoLogoGithub } from "react-icons/io5";
 import Spline from "@splinetool/react-spline";
 import { useState } from "react";
 import { Experience, Projects, SocialLinks } from "./data";
+import "./App.css";
 
 import {
   VerticalTimeline,
@@ -10,6 +11,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import Yen from "./images/IMG_0635.JPG";
+import logo from "./images/logo.svg";
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -22,6 +24,10 @@ function App() {
         {/* Navigation Bar*/}
         <nav className="w-full px-6 z-50 fixed inset-x-0 top-2 flex justify-center items-center">
           <div className="w-full md:w-880 bg-navBar p-4 rounded-2xl flex items-center">
+            <div>
+              <img src={logo} className="App-logo" alt="logo" />
+            </div>
+
             <p className="text-lg text-slate-200 font-medium">
               Yen Pinero Ferro
             </p>
@@ -125,7 +131,7 @@ function App() {
         </nav>
 
         <div className="relative" id="home">
-        <Spline scene="https://prod.spline.design/a1g0-oyl6xLI11Ba/scene.spline" />
+          <Spline scene="https://prod.spline.design/a1g0-oyl6xLI11Ba/scene.spline" />
           <div className="absolute bottom-10 w-full justify-center items-center flex">
             <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl md:hidden">
               <p className="text-textBase">Press and drag to orbit</p>
@@ -178,13 +184,16 @@ function App() {
                     className="vertical-timeline-element--work"
                     contentStyle={{
                       background: "rgb(21,24,31)",
-                      color: "rgb(110 231 183",
+                      color: "rgb(167 243 208)",
                     }}
                     contentArrowStyle={{
                       borderRight: "7px solid  rgb(52,211,153)",
                     }}
                     date={n.date}
-                    iconStyle={{ background: "rgb(21,24,31)", color: "rgb(52,211,153)" }}
+                    iconStyle={{
+                      background: "rgb(21,24,31)",
+                      color: "rgb(52,211,153)",
+                    }}
                     icon={n.iconsSrc}
                   >
                     <h3 className="vertical-timeline-element-title">
@@ -193,7 +202,7 @@ function App() {
                     <h4 className="vertical-timeline-element-subtitle">
                       {n.location}
                     </h4>
-                    <p>{n.description}</p>
+                    <p className=" text-textBase">{n.description}</p>
                   </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>
