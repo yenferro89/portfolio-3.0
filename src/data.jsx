@@ -73,17 +73,17 @@ export const Projects = [
   },
   {
     id: 3,
-    name: "Travel Advisor",
+    name: "Portfolio 3.0",
     imageSrc: img1,
-    techs: "React Js, Chakra UI, Google API",
-    github: "#",
+    techs: "React, Firebase, JSX",
+    github: "https://github.com/yenferro89/portfolio-3.0",
   },
   {
     id: 4,
-    name: "Pintrest UI Clone 2.0 ",
+    name: "Analog Clock Animated",
     imageSrc: img1,
-    techs: "React Js,  Material UI",
-    github: "#",
+    techs: "React, CSS, Typescript",
+    github: "https://github.com/yenferro89/AnalogClock",
   },
   {
     id: 5,
@@ -128,7 +128,7 @@ export const SocialLinks = [
     iconSrc: (
       <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
     ),
-    name: "Whatsapp",
+    name: "WhatsApp",
     link: "https://drive.google.com/file/d/1w_qu-wn6nFCJaxdcF-fpr9Yi76_YgBkC/view?usp=sharing",
   },
 ];

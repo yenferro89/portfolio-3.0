@@ -13,8 +13,9 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-body,html {
+html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 code {

@@ -127,7 +127,7 @@ function App() {
         <div className="relative" id="home">
         <Spline scene="https://prod.spline.design/a1g0-oyl6xLI11Ba/scene.spline" />
           <div className="absolute bottom-10 w-full justify-center items-center flex">
-            <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl">
+            <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl md:hidden">
               <p className="text-textBase">Press and drag to orbit</p>
             </div>
           </div>
@@ -158,7 +158,7 @@ function App() {
                 relationship in the tech field.
               </p>
               <motion.button
-                whileTap={{ scale: 0.8 }}
+                whileTap={{ scale: 0.5 }}
                 className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
               >
                 <span className="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
