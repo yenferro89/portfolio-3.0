@@ -2,7 +2,6 @@ import { IoMenu, IoLogoGithub } from "react-icons/io5";
 import Spline from "@splinetool/react-spline";
 import { useState } from "react";
 import { Experience, Projects, SocialLinks } from "./data";
-import "./App.css";
 
 import {
   VerticalTimeline,
