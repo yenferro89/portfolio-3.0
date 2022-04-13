@@ -7,6 +7,10 @@ import {
   IoLogoWhatsapp,
 } from "react-icons/io5";
 import img1 from "./images/IMG_1339.jpg";
+import eCommerceAngular from "./images/eCommerceAngular.png"
+import ExpressJSPostman from "./images/ExpressJSPostman.png"
+import Portfolio from "./images/Portfolio.png"
+import AnalogClock from  "./images/AnalogClock1.png"
 
 export const Experience = [
   {
@@ -61,28 +65,28 @@ export const Projects = [
   {
     id: 1,
     name: "eCommerce Web App",
-    imageSrc: img1,
+    imageSrc: eCommerceAngular,
     techs: "Angular, Firebase, TypeScript",
     github: "https://github.com/yenferro89/eCommerce_Angular",
   },
   {
     id: 2,
     name: "ExpressJS API",
-    imageSrc: img1,
+    imageSrc: ExpressJSPostman,
     techs: "NodeJS, ExpressJS",
     github: "https://github.com/yenferro89/ExpressJS-API",
   },
   {
     id: 3,
     name: "Portfolio 3.0",
-    imageSrc: img1,
+    imageSrc: Portfolio,
     techs: "React, Firebase, JSX",
     github: "https://github.com/yenferro89/portfolio-3.0",
   },
   {
     id: 4,
     name: "Analog Clock Animated",
-    imageSrc: img1,
+    imageSrc: AnalogClock,
     techs: "React, CSS, Typescript",
     github: "https://github.com/yenferro89/AnalogClock",
   },
