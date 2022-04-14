@@ -6,11 +6,11 @@ import {
   IoLogoLinkedin,
   IoLogoWhatsapp,
 } from "react-icons/io5";
-import img1 from "./images/IMG_1339.jpg";
-import eCommerceAngular from "./images/eCommerceAngular.png"
-import ExpressJSPostman from "./images/ExpressJSPostman.png"
-import Portfolio from "./images/Portfolio.png"
-import AnalogClock from  "./images/AnalogClock1.png"
+import img1 from "./images/IMG_1339.webp";
+import eCommerceAngular from "./images/eCommerceAngular.webp"
+import ExpressJSPostman from "./images/ExpressJSPostman.webp"
+import Portfolio from "./images/Portfolio.webp"
+import AnalogClock from  "./images/AnalogClock1.webp"
 
 export const Experience = [
   {

@@ -9,7 +9,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import Yen from "./images/IMG_0635.JPG";
+import Yen from "./images/IMG_0635.webp";
 import logo from "./images/logo.svg";
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -64,13 +64,13 @@ function App() {
                 Download
               </motion.a>
             </div>
-            <motion.div
+            <motion.button
               whileTap={{ scale: 0.5 }}
               className="block md:hidden ml-auto cursor-pointer"
               onClick={() => setIsActive(!isActive)}
             >
               <IoMenu className="text-2xl text-textBase"></IoMenu>
-            </motion.div>
+            </motion.button>
 
             {isActive && (
               <motion.div
@@ -132,7 +132,7 @@ function App() {
         </nav>
 
         <div className="relative" id="home">
-          <Spline scene="https://prod.spline.design/a1g0-oyl6xLI11Ba/scene.spline"/>
+          <Spline scene="https://prod.spline.design/a1g0-oyl6xLI11Ba/scene.spline" />
           <div className="absolute bottom-10 w-full justify-center items-center flex">
             <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl">
               <p className="text-textBase">Press and drag to orbit</p>
