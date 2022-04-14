@@ -151,14 +151,14 @@ function App() {
                 <img
                   className="w-full h-full absolute -right-4 top-4 object-cover rounded-lg shadow-lg"
                   src={Yen}
-                  alt=""
+                  alt="Profile Picture"
                 />
               </div>
             </div>
 
             <div className="w-full h-420 flex flex-col items-center justify-center">
               <p className="  text-lg text-textBase text-center">
-                A Computer Engineer focusing on Fullstack Development,
+                A Computer Engineer focusing on Full Stack Development,
                 Artificial Intelligence, Big Data, Data System Software, and
                 Embedded Systems, looking to secure a position with a
                 well-established company that will lead me to a lasting
@@ -190,7 +190,7 @@ function App() {
                       color: "rgb(167 243 208)",
                     }}
                     contentArrowStyle={{
-                      borderRight: "7px solid  rgb(52,211,153)",
+                      borderRight: "7px solid rgb(52,211,153)",
                     }}
                     date={n.date}
                     iconStyle={{
@@ -205,7 +205,7 @@ function App() {
                     <h4 className="vertical-timeline-element-subtitle">
                       {n.location}
                     </h4>
-                    <p className=" text-textBase">{n.description}</p>
+                    <p className="text-textBase">{n.description}</p>
                   </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>
@@ -220,13 +220,14 @@ function App() {
               Projects.map((n) => (
                 <div
                   key={n.id}
-                  className="  border border-zinc-800 rounded-md p-2 min-w-[27px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
+                  className="border border-zinc-800 rounded-md p-2 min-w-[27px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
                 >
                   <p className=" text-md text-textBase font-medium uppercase">
                     {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
                   </p>
                   <img
                     src={n.imageSrc}
+                    alt="Image Source"
                     className=" w-full h-full object-cover rounded-md my-4"
                   />
                   <div className="flex flex-1 items-center justify-between">
@@ -257,9 +258,8 @@ function App() {
                   <motion.a
                     whileTap={{ scale: 0.8 }}
                     href={n.link}
-                    target="_blank"
-                    className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3
-            "
+                    target={"_blank"}
+                    className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3"
                   >
                     {n.iconSrc}
                     <p className=" text-lg text-textBase">{n.name}</p>

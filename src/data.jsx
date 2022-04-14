@@ -48,7 +48,7 @@ export const Experience = [
     title: "Inspector",
     location: "Miami, FL",
     description:
-      "Incoming and Final Inspections, Assembly-Disassembly of units, and Project Managment",
+      "Incoming and Final Inspections, Assembly-Disassembly of units, and Project Management",
   },
   {
     id: 5,
@@ -87,7 +87,7 @@ export const Projects = [
     id: 4,
     name: "Analog Clock Animated",
     imageSrc: AnalogClock,
-    techs: "React, CSS, Typescript",
+    techs: "React, CSS, TypeScript",
     github: "https://github.com/yenferro89/AnalogClock",
   },
   {
