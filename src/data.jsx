@@ -118,7 +118,7 @@ export const SocialLinks = [
       <IoLogoInstagram className="text-orange-300 text-3xl cursor-pointer" />
     ),
     name: "Instagram",
-    link: "https://drive.google.com/file/d/1DaMTztN3SNWb61fAx52uJGcc5X1cpPiX/view?usp=sharing",
+    link: "https://www.instagram.com/yenferro/",
   },
   {
     id: 4,
@@ -134,6 +134,6 @@ export const SocialLinks = [
       <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
     ),
     name: "WhatsApp",
-    link: "https://drive.google.com/file/d/1w_qu-wn6nFCJaxdcF-fpr9Yi76_YgBkC/view?usp=sharing",
+    link: "https://wa.me/13054922467/",
   },
 ];
