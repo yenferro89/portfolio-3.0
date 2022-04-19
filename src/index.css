@@ -17,6 +17,7 @@ html::-webkit-scrollbar {
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
+  scroll-padding-top: 10%;
 }
 
 code {

@@ -67,6 +67,7 @@ function App() {
             <motion.button
               whileTap={{ scale: 0.5 }}
               className="block md:hidden ml-auto cursor-pointer"
+              aria-label="Menu"
               onClick={() => setIsActive(!isActive)}
             >
               <IoMenu className="text-2xl text-textBase"></IoMenu>
@@ -237,7 +238,7 @@ function App() {
                         {n.techs}
                       </span>
                     </p>
-                    <a href={n.github} target="_blank">
+                    <a href={n.github} aria-label="GitHub" target="_blank">
                       <motion.div whileTap={{ scale: 0.8 }} className="">
                         <IoLogoGithub className=" text-textBase text-3xl cursor-pointer"></IoLogoGithub>
                       </motion.div>
