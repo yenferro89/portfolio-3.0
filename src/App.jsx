@@ -57,7 +57,7 @@ function App() {
               </a>
               <motion.a
                 whileTap={{ scale: 0.5 }}
-                href="https://drive.google.com/file/d/1TacUwX8yEi3KXQJImqXZMG5oBLGguOGf/view?usp=sharing"
+                href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
                 target={"_blank"}
                 className="ml-auto text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out"
               >
@@ -118,7 +118,7 @@ function App() {
                   Contact
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1TacUwX8yEi3KXQJImqXZMG5oBLGguOGf/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
                   target={"_blank"}
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out"
                   onClick={() => {
