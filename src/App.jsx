@@ -65,6 +65,7 @@ function App() {
                 whileTap={{ scale: 0.5 }}
                 href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
                 target={"_blank"}
+                rel="noreferrer"
                 className="ml-auto text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out"
               >
                 Download
@@ -85,7 +86,7 @@ function App() {
                 animate={{ opacity: 1, scale: 1.1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={{ delay: "0.1s", type: "spring" }}
-                className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center justify-evenly gap-6"
+                className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-24 flex flex-col items-center justify-evenly gap-6"
               >
                 <a
                   href="#home"
@@ -135,6 +136,7 @@ function App() {
                 <a
                   href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
                   target={"_blank"}
+                  rel="noreferrer"
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out"
                   onClick={() => {
                     setIsActive(false);
@@ -188,7 +190,8 @@ function App() {
                   whileTap={{ scale: 0.5 }}
                   href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
                   target={"_blank"}
-                  className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
+                  rel="noreferrer"
+                  className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
                 >
                   <span className="w-full md:w-auto relative px-5 py-2.5 text-center transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     Download
@@ -199,79 +202,86 @@ function App() {
           </section>
 
           {/*Timeline*/}
-          <section className="w-full flex items-center justify-start mb-24"
-          id="experience">
-            <VerticalTimeline>
-              {Experience &&
-                Experience.map((n) => (
-                  <VerticalTimelineElement
-                    key={n.id}
-                    className="vertical-timeline-element--work"
-                    contentStyle={{
-                      background: "rgb(21,24,31)",
-                      color: "rgb(167 243 208)",
-                    }}
-                    contentArrowStyle={{
-                      borderRight: "7px solid rgb(52,211,153)",
-                    }}
-                    date={n.date}
-                    iconStyle={{
-                      background: "rgb(21,24,31)",
-                      color: "rgb(52,211,153)",
-                    }}
-                    icon={n.iconsSrc}
-                  >
-                    <h3 className="vertical-timeline-element-title">
-                      {n.title}
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                      {n.location}
-                    </h4>
-                    <p className="text-textBase">{n.description}</p>
-                  </VerticalTimelineElement>
-                ))}
-            </VerticalTimeline>
+          <section id="experience">
+            <div className="flex flex-col items-center justify-center w-full my-4">
+              <p className="text-2xl text-gray-400 capitalize">work experience</p>
+            </div>
+            <div className="w-full flex items-center justify-start mb-24"
+            >
+              <VerticalTimeline>
+                {Experience &&
+                  Experience.map((n) => (
+                    <VerticalTimelineElement
+                      key={n.id}
+                      className="vertical-timeline-element--work"
+                      contentStyle={{
+                        background: "rgb(21,24,31)",
+                        color: "rgb(167 243 208)",
+                      }}
+                      contentArrowStyle={{
+                        borderRight: "7px solid rgb(52,211,153)",
+                      }}
+                      date={n.date}
+                      iconStyle={{
+                        background: "rgb(21,24,31)",
+                        color: "rgb(52,211,153)",
+                      }}
+                      icon={n.iconsSrc}
+                    >
+                      <h3 className="vertical-timeline-element-title">
+                        {n.title}
+                      </h3>
+                      <h4 className="vertical-timeline-element-subtitle">
+                        {n.location}
+                      </h4>
+                      <p className="text-textBase">{n.description}</p>
+                    </VerticalTimelineElement>
+                  ))}
+              </VerticalTimeline>
+            </div>
           </section>
-
-          <div className="flex flex-col items-center justify-center w-full my-4">
-            <p className="text-2xl text-gray-400 capitalize">My projects</p>
-          </div>
+          
           {/*Projects Section*/}
-          <section
-            className="flex flex-wrap items-center justify-evenly gap-4"
-            id="projects"
-          >
-            {Projects &&
-              Projects.map((n) => (
-                <div
-                  key={n.id}
-                  className="border border-zinc-800 rounded-md p-2 min-w-[27px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
-                >
-                  <p className=" text-md text-textBase font-medium uppercase">
-                    {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
-                  </p>
-                  <img
-                    src={n.imageSrc}
-                    alt="Image Source"
-                    className=" w-full h-full object-cover rounded-md my-4"
-                  />
-                  <div className="flex flex-1 items-center justify-between">
-                    <p className="text-lg text-gray-300">
-                      Technologies
-                      <span className="block text-sm text-gray-500">
-                        {n.techs}
-                      </span>
+          <section id="projects">
+            <div className="flex flex-col items-center justify-center w-full my-4">
+              <p className="text-2xl text-gray-400 capitalize">My projects</p>
+            </div>
+            <div
+              className="flex flex-wrap items-center justify-evenly gap-4"
+            >
+              {Projects &&
+                Projects.map((n) => (
+                  <div
+                    key={n.id}
+                    className="border border-zinc-800 rounded-md p-2 min-w-[27px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
+                  >
+                    <p className=" text-md text-textBase font-medium uppercase">
+                      {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
                     </p>
-                    <a href={n.github} aria-label="GitHub" target="_blank">
-                      <motion.div whileTap={{ scale: 0.8 }} className="">
-                        <IoLogoGithub className=" text-textBase text-3xl cursor-pointer"></IoLogoGithub>
-                      </motion.div>
-                    </a>
+                    <img
+                      src={n.imageSrc}
+                      alt="Image Source"
+                      className=" w-full h-full object-cover rounded-md my-4"
+                    />
+                    <div className="flex flex-1 items-center justify-between">
+                      <p className="text-lg text-gray-300">
+                        Technologies
+                        <span className="block text-sm text-gray-500">
+                          {n.techs}
+                        </span>
+                      </p>
+                      <a href={n.github} aria-label="GitHub" target="_blank">
+                        <motion.div whileTap={{ scale: 0.8 }} className="">
+                          <IoLogoGithub className=" text-textBase text-3xl cursor-pointer"></IoLogoGithub>
+                        </motion.div>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
           </section>
 
+          {/*Contact Section*/}
           <section
             className="flex flex-col items-center justify-center w-full mt-24"
             id="contact"
@@ -284,6 +294,7 @@ function App() {
                     whileTap={{ scale: 0.8 }}
                     href={n.link}
                     target={"_blank"}
+                    rel="noreferrer"ç
                     className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3"
                   >
                     {n.iconSrc}

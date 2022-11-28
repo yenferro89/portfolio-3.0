@@ -17,45 +17,54 @@ export const Experience = [
     id: 1,
     date: "2022 - Present",
     iconsSrc: <IoCodeWorking />,
-    title: "IT Support Analyst",
-    location: "Miami, FL",
+    title: "Customer Support Engineer",
+    location: "Kaseya, Miami FL",
     description:
       "Moderate Website, Documentation, Data Warehouse Management, and Project Management",
   },
   {
     id: 2,
+    date: "2022 - 2022",
+    iconsSrc: <IoCodeWorking />,
+    title: "IT Support Analyst",
+    location: "Azulle, Miami FL",
+    description:
+      "Moderate Website, Documentation, Data Warehouse Management, and Project Management",
+  },
+  {
+    id: 3,
     date: "2021 - 2022",
     iconsSrc: <IoCodeWorking />,
     title: "Fullstack Developer",
-    location: "Miami, FL",
+    location: "FIU, Miami FL",
     description:
       "Web Development, User Experience, Visual Design, Project Management, and Team Leading",
   },
 
   {
-    id: 3,
+    id: 4,
     date: "2019 - 2020",
     iconsSrc: <IoCodeWorking />,
     title: "Technician",
-    location: "Miami, FL",
+    location: "NextMRO, Miami FL",
     description:
       "Perform routine checks, Repairs, Overhauls, and Project Management",
   },
   {
-    id: 4,
+    id: 5,
     date: "2014 - 2019",
     iconsSrc: <IoCodeWorking />,
     title: "Inspector",
-    location: "Miami, FL",
+    location: "Illuminair Support, Miami FL",
     description:
       "Incoming and Final Inspections, Assembly-Disassembly of units, and Project Management",
   },
   {
-    id: 5,
+    id: 6,
     date: "2012 - 2014",
     iconsSrc: <IoCodeWorking />,
     title: "Assistant Manager",
-    location: "Miami, FL",
+    location: "RadioShack, Miami FL",
     description:
       "Project Management, Team Leading",
   },
