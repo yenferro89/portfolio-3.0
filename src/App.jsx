@@ -149,7 +149,7 @@ function App() {
           </div>
         </nav>
 
-        <div className="relative" id="home">
+        <section className="relative" id="home">
           <Spline scene="https://prod.spline.design/9PcjHahhRRFXyetU/scene.splinecode" 
           />
           <div className="absolute bottom-10 w-full justify-center items-center flex">
@@ -157,7 +157,7 @@ function App() {
               <p className="text-textBase">Press and drag to orbit</p>
             </div>
           </div>
-        </div>
+        </section>
 
         {/*Main Section*/}
         <main className="w-[80%] mt-5">
