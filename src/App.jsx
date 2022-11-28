@@ -166,14 +166,14 @@ function App() {
               <p className="text-2xl text-gray-400 capitalize">About</p>
             </div>
             <div
-              className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-24"
+              className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"
             >
               <div className="w-full h-420 flex items-center justify-center">
                 <div className="w-275 h-340 bg-emerald-300 rounded-md relative">
                   <img
                     className="w-full h-full absolute -right-4 top-4 object-cover rounded-lg shadow-lg"
                     src={Yen}
-                    alt="Profile Picture"
+                    alt=""
                   />
                 </div>
               </div>
@@ -191,7 +191,7 @@ function App() {
                   href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
                   target={"_blank"}
                   rel="noreferrer"
-                  className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
+                  className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br group from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
                 >
                   <span className="w-full md:w-auto relative px-5 py-2.5 text-center transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     Download
@@ -260,7 +260,7 @@ function App() {
                     </p>
                     <img
                       src={n.imageSrc}
-                      alt="Image Source"
+                      alt=""
                       className=" w-full h-full object-cover rounded-md my-4"
                     />
                     <div className="flex flex-1 items-center justify-between">
@@ -270,7 +270,7 @@ function App() {
                           {n.techs}
                         </span>
                       </p>
-                      <a href={n.github} aria-label="GitHub" target="_blank">
+                      <a href={n.github} aria-label="GitHub" target="_blank" rel="noreferrer">
                         <motion.div whileTap={{ scale: 0.8 }} className="">
                           <IoLogoGithub className=" text-textBase text-3xl cursor-pointer"></IoLogoGithub>
                         </motion.div>
