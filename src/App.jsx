@@ -44,6 +44,12 @@ function App() {
                 About
               </a>
               <a
+                href="#experience"
+                className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out"
+              >
+                Experience
+              </a>
+              <a
                 href="#projects"
                 className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out"
               >
@@ -100,6 +106,15 @@ function App() {
                   About
                 </a>
                 <a
+                  href="#experience"
+                  className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out"
+                  onClick={() => {
+                    setIsActive(false);
+                  }}
+                >
+                  Experience
+                </a>
+                <a
                   href="#projects"
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out"
                   onClick={() => {
@@ -133,7 +148,8 @@ function App() {
         </nav>
 
         <div className="relative" id="home">
-          <Spline scene="https://prod.spline.design/a1g0-oyl6xLI11Ba/scene.spline" />
+          <Spline scene="https://prod.spline.design/9PcjHahhRRFXyetU/scene.splinecode" 
+          />
           <div className="absolute bottom-10 w-full justify-center items-center flex">
             <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl">
               <p className="text-textBase">Press and drag to orbit</p>
@@ -143,43 +159,48 @@ function App() {
 
         {/*Main Section*/}
         <main className="w-[80%] mt-5">
-          <section
-            className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-24"
-            id="about"
-          >
-            <div className="w-full h-420 flex items-center justify-center">
-              <div className="w-275 h-340 bg-emerald-300 rounded-md relative">
-                <img
-                  className="w-full h-full absolute -right-4 top-4 object-cover rounded-lg shadow-lg"
-                  src={Yen}
-                  alt="Profile Picture"
-                />
-              </div>
+          <section id="about">
+            <div className="flex flex-col items-center justify-center w-full mt-4 ">
+              <p className="text-2xl text-gray-400 capitalize">About</p>
             </div>
+            <div
+              className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-24"
+            >
+              <div className="w-full h-420 flex items-center justify-center">
+                <div className="w-275 h-340 bg-emerald-300 rounded-md relative">
+                  <img
+                    className="w-full h-full absolute -right-4 top-4 object-cover rounded-lg shadow-lg"
+                    src={Yen}
+                    alt="Profile Picture"
+                  />
+                </div>
+              </div>
 
-            <div className="w-full h-420 flex flex-col items-center justify-center">
-              <p className="  text-lg text-textBase text-center">
-                A Computer Engineer focusing on Full Stack Development,
-                Artificial Intelligence, Big Data, Data System Software, and
-                Embedded Systems, looking to secure a position with a
-                well-established company that will lead me to a lasting
-                relationship in the tech field.
-              </p>
-              <motion.a
-                whileTap={{ scale: 0.5 }}
-                href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
-                target={"_blank"}
-                className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
-              >
-                <span className="w-full md:w-auto relative px-5 py-2.5 text-center transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                  Download
-                </span>
-              </motion.a>
+              <div className="w-full h-420 flex flex-col items-center justify-center">
+                <p className="text-lg text-textBase text-center">
+                  A Computer Engineer focusing on Full Stack Development,
+                  Artificial Intelligence, Big Data, Data System Software, and
+                  Embedded Systems, looking to secure a position with a
+                  well-established company that will lead me to a lasting
+                  relationship in the tech field.
+                </p>
+                <motion.a
+                  whileTap={{ scale: 0.5 }}
+                  href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
+                  target={"_blank"}
+                  className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
+                >
+                  <span className="w-full md:w-auto relative px-5 py-2.5 text-center transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Download
+                  </span>
+                </motion.a>
+              </div>
             </div>
           </section>
 
           {/*Timeline*/}
-          <section className="w-full flex items-center justify-start">
+          <section className="w-full flex items-center justify-start mb-24"
+          id="experience">
             <VerticalTimeline>
               {Experience &&
                 Experience.map((n) => (
@@ -212,9 +233,12 @@ function App() {
             </VerticalTimeline>
           </section>
 
+          <div className="flex flex-col items-center justify-center w-full my-4">
+            <p className="text-2xl text-gray-400 capitalize">My projects</p>
+          </div>
           {/*Projects Section*/}
           <section
-            className="  flex flex-wrap items-center justify-evenly my-24 gap-4"
+            className="flex flex-wrap items-center justify-evenly gap-4"
             id="projects"
           >
             {Projects &&
@@ -249,10 +273,10 @@ function App() {
           </section>
 
           <section
-            className="flex flex-col items-center justify-center w-full my-24"
+            className="flex flex-col items-center justify-center w-full mt-24"
             id="contact"
           >
-            <p className=" text-2xl text-gray-400 capitalize">Follow me</p>
+            <p className=" text-2xl text-gray-400 capitalize">Contact me</p>
             <div className="flex items-center justify-center w-full my-4 flex-wrap gap-4">
               {SocialLinks &&
                 SocialLinks.map((n) => (
