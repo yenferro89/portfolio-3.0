@@ -2,6 +2,7 @@ import { IoMenu, IoLogoGithub } from "react-icons/io5";
 import Spline from "@splinetool/react-spline";
 import { useState } from "react";
 import { Experience, Projects, SocialLinks } from "./data";
+import React from "react";
 
 import {
   VerticalTimeline,
@@ -18,7 +19,7 @@ function App() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <AnimatePresence initial={false}>
+    <AnimatePresence initial={`${false}`}>
       <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
         {/* Navigation Bar*/}
         <nav className="w-full px-6 z-50 fixed inset-x-0 top-2 flex justify-center items-center">
@@ -63,7 +64,7 @@ function App() {
               </a>
               <motion.a
                 whileTap={{ scale: 0.5 }}
-                href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
+                href="https://drive.google.com/file/d/1n593bJ6LoG4JytRQpn9DmC6r8B_8gTrt/view?usp=share_link"
                 target={"_blank"}
                 rel="noreferrer"
                 className="ml-auto text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out"
@@ -134,7 +135,7 @@ function App() {
                   Contact
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1n593bJ6LoG4JytRQpn9DmC6r8B_8gTrt/view?usp=share_link"
                   target={"_blank"}
                   rel="noreferrer"
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out"
@@ -150,8 +151,7 @@ function App() {
         </nav>
 
         <section className="relative" id="home">
-          <Spline scene="https://prod.spline.design/9PcjHahhRRFXyetU/scene.splinecode" 
-          />
+          <Spline scene="https://prod.spline.design/9PcjHahhRRFXyetU/scene.splinecode" />
           <div className="absolute bottom-10 w-full justify-center items-center flex">
             <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl">
               <p className="text-textBase">Press and drag to orbit</p>
@@ -165,9 +165,7 @@ function App() {
             <div className="flex flex-col items-center justify-center w-full mt-4 ">
               <p className="text-2xl text-gray-400 capitalize">About</p>
             </div>
-            <div
-              className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"
-            >
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
               <div className="w-full h-420 flex items-center justify-center">
                 <div className="w-275 h-340 bg-emerald-300 rounded-md relative">
                   <img
@@ -188,7 +186,7 @@ function App() {
                 </p>
                 <motion.a
                   whileTap={{ scale: 0.5 }}
-                  href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1n593bJ6LoG4JytRQpn9DmC6r8B_8gTrt/view?usp=share_link"
                   target={"_blank"}
                   rel="noreferrer"
                   className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg bg-gradient-to-br group from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
@@ -204,10 +202,11 @@ function App() {
           {/*Timeline*/}
           <section id="experience">
             <div className="flex flex-col items-center justify-center w-full my-4">
-              <p className="text-2xl text-gray-400 capitalize">work experience</p>
+              <p className="text-2xl text-gray-400 capitalize">
+                work experience
+              </p>
             </div>
-            <div className="w-full flex items-center justify-start mb-24"
-            >
+            <div className="w-full flex items-center justify-start mb-24">
               <VerticalTimeline>
                 {Experience &&
                   Experience.map((n) => (
@@ -240,15 +239,13 @@ function App() {
               </VerticalTimeline>
             </div>
           </section>
-          
+
           {/*Projects Section*/}
           <section id="projects">
             <div className="flex flex-col items-center justify-center w-full my-4">
               <p className="text-2xl text-gray-400 capitalize">My projects</p>
             </div>
-            <div
-              className="flex flex-wrap items-center justify-evenly gap-4"
-            >
+            <div className="flex flex-wrap items-center justify-evenly gap-4">
               {Projects &&
                 Projects.map((n) => (
                   <div
@@ -256,7 +253,9 @@ function App() {
                     className="border border-zinc-800 rounded-md p-2 min-w-[27px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
                   >
                     <p className=" text-md text-textBase font-medium uppercase">
-                      {`${n.name.length}` > 25 ? `${n.name.slice(0, 25)}...` : `${n.name}`}
+                      {`${n.name.length}` > 25
+                        ? `${n.name.slice(0, 25)}...`
+                        : `${n.name}`}
                     </p>
                     <img
                       src={n.imageSrc}
@@ -270,7 +269,12 @@ function App() {
                           {n.techs}
                         </span>
                       </p>
-                      <a href={n.github} aria-label="GitHub" target="_blank" rel="noreferrer">
+                      <a
+                        href={n.github}
+                        aria-label="GitHub"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <motion.div whileTap={{ scale: 0.8 }} className="">
                           <IoLogoGithub className=" text-textBase text-3xl cursor-pointer"></IoLogoGithub>
                         </motion.div>
@@ -294,7 +298,7 @@ function App() {
                     whileTap={{ scale: 0.8 }}
                     href={n.link}
                     target={"_blank"}
-                    rel="noreferrer"  
+                    rel="noreferrer"
                     className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3"
                   >
                     {n.iconSrc}

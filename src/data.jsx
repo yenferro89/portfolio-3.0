@@ -21,7 +21,7 @@ export const Experience = [
     title: "Customer Support Engineer",
     location: "Kaseya, Miami FL",
     description:
-      "Moderate Website, Documentation, Data Warehouse Management, and Project Management",
+      "SQL databases, commands/utilities including but not limited to Apache, FTP, telnet, SSH, SMTP, POP, IMAP",
   },
   {
     id: 2,
