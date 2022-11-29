@@ -191,9 +191,9 @@ function App() {
                   href="https://drive.google.com/file/d/1WsCNNiQb-zdAvR3jt3Rxs8AWvnmbIg9Y/view?usp=sharing"
                   target={"_blank"}
                   rel="noreferrer"
-                  className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br group from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
+                  className="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg bg-gradient-to-br group from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
                 >
-                  <span className="w-full md:w-auto relative px-5 py-2.5 text-center transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                  <span className="w-full md:w-auto relative px-5 py-2.5 text-center transition-all ease-in duration-75 bg-primary dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     Download
                   </span>
                 </motion.a>
@@ -221,7 +221,7 @@ function App() {
                       contentArrowStyle={{
                         borderRight: "7px solid rgb(52,211,153)",
                       }}
-                      date={n.date}
+                      date={`${n.date}`}
                       iconStyle={{
                         background: "rgb(21,24,31)",
                         color: "rgb(52,211,153)",
@@ -229,10 +229,10 @@ function App() {
                       icon={n.iconsSrc}
                     >
                       <h3 className="vertical-timeline-element-title">
-                        {n.title}
+                        {`${n.title}`}
                       </h3>
                       <h4 className="vertical-timeline-element-subtitle">
-                        {n.location}
+                        {`${n.location}`}
                       </h4>
                       <p className="text-textBase">{n.description}</p>
                     </VerticalTimelineElement>
@@ -256,7 +256,7 @@ function App() {
                     className="border border-zinc-800 rounded-md p-2 min-w-[27px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
                   >
                     <p className=" text-md text-textBase font-medium uppercase">
-                      {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
+                      {`${n.name.length}` > 25 ? `${n.name.slice(0, 25)}...` : `${n.name}`}
                     </p>
                     <img
                       src={n.imageSrc}
@@ -294,11 +294,11 @@ function App() {
                     whileTap={{ scale: 0.8 }}
                     href={n.link}
                     target={"_blank"}
-                    rel="noreferrer"ç
+                    rel="noreferrer"  
                     className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3"
                   >
                     {n.iconSrc}
-                    <p className=" text-lg text-textBase">{n.name}</p>
+                    <p className=" text-lg text-textBase">{`${n.name}`}</p>
                   </motion.a>
                 ))}
             </div>

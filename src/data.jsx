@@ -6,11 +6,12 @@ import {
   IoLogoLinkedin,
   IoLogoWhatsapp,
 } from "react-icons/io5";
-import img1 from "./images/IMG_1339.webp";
+
 import eCommerceAngular from "./images/eCommerceAngular.webp"
 import ExpressJSPostman from "./images/ExpressJSPostman.webp"
 import Portfolio from "./images/Portfolio.webp"
-import AnalogClock from  "./images/AnalogClock1.webp"
+import QBT from  "./images/QBT.webp"
+import techNotes from "./images/techNotes.webp"
 
 export const Experience = [
   {
@@ -94,18 +95,19 @@ export const Projects = [
   },
   {
     id: 4,
-    name: "Analog Clock Animated",
-    imageSrc: AnalogClock,
-    techs: "React, CSS, TypeScript",
-    github: "https://github.com/yenferro89/AnalogClock",
+    name: "Quality Behavior Therapy",
+    imageSrc: QBT,
+    techs: "NextJS, Tailwind, Vercel",
+    github: "https://www.qbehavior.com/",
   },
   {
     id: 5,
-    name: "Mortgage Calculator",
-    imageSrc: img1,
-    techs: "Java",
-    github: "https://github.com/yenferro89/Mortgage_Calculator_Improved",
+    name: "techNotes",
+    imageSrc: techNotes,
+    techs: "MongoDB, ExpressJS, React, NodeJS",
+    github: "https://github.com/yenferro89/techNotes",
   },
+
 ];
 
 export const SocialLinks = [
