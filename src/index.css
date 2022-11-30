@@ -1,29 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-body {
-  margin: 0;
-  font-family: "jost", sans-serif -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-overflow-scrolling: touch;
-}
-
-body::-webkit-scrollbar,
-html::-webkit-scrollbar {
-  display: none;
-}
-
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
   scroll-padding-top: 15%;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  overflow-x: hidden; 
 }
 
 .App-logo {
@@ -47,5 +28,5 @@ code {
 }
 
 @tailwind base;
-@tailwind components;
+@tailwind components; 
 @tailwind utilities;

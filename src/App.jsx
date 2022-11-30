@@ -3,8 +3,8 @@ import Spline from "@splinetool/react-spline";
 import { useState } from "react";
 import logo from "./images/logo.svg";
 import { AnimatePresence, motion } from "framer-motion";
-import React, { Suspense } from 'react';
-const Main = React.lazy(() => import('./Main'));
+import React, { Suspense } from "react";
+const Main = React.lazy(() => import("./Main"));
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -34,12 +34,6 @@ function App() {
                 className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out"
               >
                 About
-              </a>
-              <a
-                href="#experience"
-                className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out"
-              >
-                Experience
               </a>
               <a
                 href="#projects"
@@ -78,7 +72,7 @@ function App() {
                 animate={{ opacity: 1, scale: 1.1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={{ delay: "0.1s", type: "spring" }}
-                className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-24 flex flex-col items-center justify-evenly gap-6"
+                className="p-4 w-3/5 bg-navBar rounded-lg fixed top-24 right-10 flex flex-col items-center justify-evenly gap-6"
               >
                 <a
                   href="#home"
@@ -97,15 +91,6 @@ function App() {
                   }}
                 >
                   About
-                </a>
-                <a
-                  href="#experience"
-                  className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out"
-                  onClick={() => {
-                    setIsActive(false);
-                  }}
-                >
-                  Experience
                 </a>
                 <a
                   href="#projects"
@@ -141,19 +126,18 @@ function App() {
           </div>
         </nav>
 
-        <section className="relative" id="home">
+        <div className="relative" id="home">
           <Spline scene="https://prod.spline.design/9PcjHahhRRFXyetU/scene.splinecode" />
-          <div className="absolute bottom-10 w-full justify-center inline-flex">
-            <div className="shadow-md p-4 bg-zinc-900 rounded-3xl">
-              <p className="text-textBase">Press and drag to orbit</p>
+          <div className="absolute mb-16 md:mb-0 bottom-4 w-full justify-center items-center flex">
+            <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl">
+              <p className="text-textBase whitespace-nowrap">Press and drag to orbit</p>
             </div>
           </div>
-        </section>
-        <Suspense>
-          <Main/>
-        </Suspense>
+        </div>
 
-        
+        <Suspense>
+          <Main />
+        </Suspense>
       </div>
     </AnimatePresence>
   );

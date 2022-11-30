@@ -14,9 +14,9 @@ const Main = () => {
   return (
     <AnimatePresence initial={`${false}`}>
       {/*Main Section*/}
-      <main className="w-[80%] mt-5">
+      <main className="w-[80%] mt-1">
         <section id="about">
-          <div className="flex flex-col items-center justify-center w-full mt-4 ">
+          <div className="flex flex-col items-center justify-center w-full mt-12">
             <p className="text-2xl text-gray-400 capitalize">About</p>
           </div>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
@@ -51,10 +51,8 @@ const Main = () => {
               </motion.a>
             </div>
           </div>
-        </section>
 
-        {/*Timeline*/}
-        <section id="experience">
+          {/*Timeline*/}
           <div className="flex flex-col items-center justify-center w-full my-4">
             <p className="text-2xl text-gray-400 capitalize">work experience</p>
           </div>
