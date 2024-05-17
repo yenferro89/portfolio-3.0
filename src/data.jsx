@@ -16,7 +16,17 @@ import techNotes from "./images/techNotes.webp"
 export const Experience = [
   {
     id: 1,
-    date: "2022 - Present",
+    date: "2023 - Present",
+    iconsSrc: <IoCodeWorking />,
+    title: "Full Stack Developer",
+    location: "RecirQ Global, Miami FL",
+    description:
+      "Web Development, Angular, Spring Boot, Tailwind, MySQL, Java, Typescript, GCP, Argo CD, Bitbucket CI, Kubernetes, Microservices",
+
+  },
+  {
+    id: 2,
+    date: "2022 - 2023",
     iconsSrc: <IoCodeWorking />,
     title: "Customer Support Engineer",
     location: "Kaseya, Miami FL",
@@ -24,7 +34,7 @@ export const Experience = [
       "SQL databases, commands/utilities including but not limited to Apache, FTP, telnet, SSH, SMTP, POP, IMAP",
   },
   {
-    id: 2,
+    id: 3,
     date: "2022 - 2022",
     iconsSrc: <IoCodeWorking />,
     title: "IT Support Analyst",
@@ -33,7 +43,7 @@ export const Experience = [
       "Moderate Website, Documentation, Data Warehouse Management, and Project Management",
   },
   {
-    id: 3,
+    id: 4,
     date: "2021 - 2022",
     iconsSrc: <IoCodeWorking />,
     title: "Fullstack Developer",
@@ -43,7 +53,7 @@ export const Experience = [
   },
 
   {
-    id: 4,
+    id: 5,
     date: "2019 - 2020",
     iconsSrc: <IoCodeWorking />,
     title: "Technician",
@@ -52,7 +62,7 @@ export const Experience = [
       "Perform routine checks, Repairs, Overhauls, and Project Management",
   },
   {
-    id: 5,
+    id: 6,
     date: "2014 - 2019",
     iconsSrc: <IoCodeWorking />,
     title: "Inspector",
@@ -61,7 +71,7 @@ export const Experience = [
       "Incoming and Final Inspections, Assembly-Disassembly of units, and Project Management",
   },
   {
-    id: 6,
+    id: 7,
     date: "2012 - 2014",
     iconsSrc: <IoCodeWorking />,
     title: "Assistant Manager",
