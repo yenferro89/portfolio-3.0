@@ -3,22 +3,25 @@ import Spline from "@splinetool/react-spline";
 import { useState } from "react";
 import logo from "./images/logo.svg";
 import { AnimatePresence, motion } from "framer-motion";
-import React, { Suspense } from "react";
-const Main = React.lazy(() => import("./Main"));
+import React from "react";
 
 function App() {
   const [isActive, setIsActive] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoad = () => {
+    setIsLoading(false);
+  };
 
   return (
-    <AnimatePresence initial={`${false}`}>
+    <AnimatePresence initial={false}>
       <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
-        {/* Navigation Bar*/}
+        {/* Navigation Bar */}
         <nav className="w-full px-6 z-50 fixed inset-x-0 top-2 flex justify-center items-center">
           <div className="w-full md:w-880 bg-navBar p-4 rounded-2xl flex items-center">
             <div>
               <img src={logo} className="App-logo" alt="logo" />
             </div>
-
             <p className="text-lg text-slate-200 font-medium">
               Yen Pinero Ferro
             </p>
@@ -65,7 +68,6 @@ function App() {
             >
               <IoMenu className="text-2xl text-textBase"></IoMenu>
             </motion.button>
-
             {isActive && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -125,19 +127,19 @@ function App() {
             )}
           </div>
         </nav>
-
-        <div className="relative" id="home">
-          <Spline scene="https://prod.spline.design/9PcjHahhRRFXyetU/scene.splinecode" />
-          <div className="absolute mb-16 md:mb-0 bottom-4 w-full justify-center items-center flex">
+        <div className="relative overflow-hidden" id="home">
+          {isLoading && (
+            <div className="flex items-center justify-center w-full h-full">
+              <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div>
+            </div>
+          )}
+          <Spline scene="https://prod.spline.design/9PcjHahhRRFXyetU/scene.splinecode" onLoad={handleLoad} />
+          <div className="absolute mb-16 md:mb-0 bottom-4 w-full flex justify-center items-center">
             <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl">
               <p className="text-textBase whitespace-nowrap">Press and drag to orbit</p>
             </div>
           </div>
         </div>
-
-        <Suspense>
-          <Main />
-        </Suspense>
       </div>
     </AnimatePresence>
   );
