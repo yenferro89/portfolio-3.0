@@ -4,6 +4,7 @@ import { useState } from "react";
 import logo from "./images/logo.svg";
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
+import Main from "./Main";
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -139,6 +140,9 @@ function App() {
               <p className="text-textBase whitespace-nowrap">Press and drag to orbit</p>
             </div>
           </div>
+        </div>
+        <div>
+          <Main />
         </div>
       </div>
     </AnimatePresence>

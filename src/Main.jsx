@@ -103,9 +103,7 @@ const Main = () => {
                   className="border border-zinc-800 rounded-md p-2 min-w-[27px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
                 >
                   <p className=" text-md text-textBase font-medium uppercase">
-                    {`${n.name.length}` > 25
-                      ? `${n.name.slice(0, 25)}...`
-                      : `${n.name}`}
+                    {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
                   </p>
                   <img
                     src={n.imageSrc}
@@ -145,6 +143,7 @@ const Main = () => {
             {SocialLinks &&
               SocialLinks.map((n) => (
                 <motion.a
+                  key={n.id}
                   whileTap={{ scale: 0.8 }}
                   href={n.link}
                   target={"_blank"}
@@ -152,7 +151,7 @@ const Main = () => {
                   className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3"
                 >
                   {n.iconSrc}
-                  <p className=" text-lg text-textBase">{`${n.name}`}</p>
+                  <p className=" text-lg text-textBase">{n.name}</p>
                 </motion.a>
               ))}
           </div>
