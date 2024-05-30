@@ -75,7 +75,7 @@ function App() {
                 animate={{ opacity: 1, scale: 1.1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={{ delay: "0.1s", type: "spring" }}
-                className="p-4 w-3/5 bg-navBar rounded-lg fixed top-24 right-10 flex flex-col items-center justify-evenly gap-6"
+                className="p-4 w-4/5 bg-navBar rounded-lg fixed top-24 left-12 flex flex-col items-center justify-center gap-6"
               >
                 <a
                   href="#home"
@@ -114,7 +114,7 @@ function App() {
                   Contact
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1n593bJ6LoG4JytRQpn9DmC6r8B_8gTrt/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1Nwipnh20J9_r4TOZqf787uQ295Kb4nUG/view?usp=sharing"
                   target={"_blank"}
                   rel="noreferrer"
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out"
@@ -128,22 +128,21 @@ function App() {
             )}
           </div>
         </nav>
-        <div className="relative overflow-hidden" id="home">
+        <div className="relative overflow-hidden min-h-screen" id="home">
           {isLoading && (
-            <div className="flex items-center justify-center w-full h-full">
+            <div className="absolute inset-0 flex items-center justify-center">
               <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div>
             </div>
           )}
           <Spline scene="https://prod.spline.design/9PcjHahhRRFXyetU/scene.splinecode" onLoad={handleLoad} />
-          <div className="absolute mb-16 md:mb-0 bottom-4 w-full flex justify-center items-center">
+          <div className="absolute mb-16 md:mb-0 bottom-5 w-full flex justify-center items-center z-10">
             <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl">
               <p className="text-textBase whitespace-nowrap">Press and drag to orbit</p>
             </div>
           </div>
         </div>
-        <div>
-          <Main />
-        </div>
+
+        <Main />
       </div>
     </AnimatePresence>
   );
